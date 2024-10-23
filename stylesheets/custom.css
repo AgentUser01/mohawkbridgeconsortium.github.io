@@ -1419,11 +1419,26 @@ section.home-statistics {
     color: #606060;
 }
 
+/* Default style for larger screens */
 .home-statistics span.nombre-fact {
     color: black;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .home-statistics span.nombre-fact {
+        font-size: 40px; /* Adjust to fit medium-sized screens */
+    }
+}
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .home-statistics span.nombre-fact {
+        font-size: 30px; /* Adjust to fit small screens */
+    }
 }
 
 .home-statistics .col {
