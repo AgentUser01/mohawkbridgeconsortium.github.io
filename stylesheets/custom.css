@@ -52,7 +52,7 @@ body.red #page-title,
 body .cover-form,
 body.red .cover,
 body .menu-filters .residential-form-filters {
-	margin-top:70px;
+	margin-top:0px;
 }
 
 
@@ -168,7 +168,7 @@ body.red.support .nav-menu{
 }
 
 a.closing.close-search-bar + .dropdown, span.closing.close-search-bar + .dropdown {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 /**/
@@ -437,7 +437,7 @@ a.pale-grey:hover, a.pale-grey:focus {
   visibility: hidden;
   opacity: 0;
 transition: all 0.5s ease;
-padding-top: 20px;
+padding-top: 0px;
 display: none;
   	
     background: black;
@@ -1084,7 +1084,6 @@ p.timeline {
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:url('../images/brocco/history_header_1920x1000.jpg');
 }
 
 .light-display p.timeline {color: #000; font-weight: 600;}
@@ -3924,7 +3923,7 @@ span.property-sq-ft {
 ----------------------------------------------------------*/
 .support .navigation {
     width: 100%;
-    top: 90px;
+    top: 70px;
     right: initial;
     left: initial;
     bottom: initial;
