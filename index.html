@@ -231,12 +231,8 @@
 
                     <div class="col equal" data-aos="fade-up">
                         <div class="card">
-                            <div class="card-img-top middle">
-                                <span class="nombre-fact">16+</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <h4>Years in Business</h4>
-                            </div>
+                            <div class="card-img-top middle"><span id="years-in-business" class="nombre-fact">16+</span></div>
+                            <div class="card-body text-center"><h4>Years in Business</h4></div>
                         </div>
                     </div>
 
@@ -458,6 +454,19 @@
 
 <script src="Scripts/modernizr.custom.js"></script>
 <script src="Scripts/index.min.js"></script>
+
+<!-- Custom JavaScript to update years in business -->
+<script>
+    function updateYearsInBusiness() {
+        const startDate = new Date("2008-01-01");
+        const currentDate = new Date();
+        const yearsDifference = currentDate.getFullYear() - startDate.getFullYear();
+        const yearsElement = document.getElementById("years-in-business");
+        yearsElement.innerText = `${yearsDifference}+`;
+    }
+
+    updateYearsInBusiness();
+</script>
 
 </body>
 
