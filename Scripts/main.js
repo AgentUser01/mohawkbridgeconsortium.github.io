@@ -421,22 +421,17 @@ if (currentTab) {
 
 
 
-$(document).ready(function() {
-    function addS() {
-        $(".cover-text").fadeIn().addClass('slide');
+$(function() {
+    function hideLoader() {
+        $(".loader").fadeOut(1500, function() {
+            $(this).remove();
+            $(".main").fadeIn(); // Show the main content
+            $(".cover-text").fadeIn().addClass('slide');
+        });
     }
 
-    var $loader = $(".loader");
-
-    if ($loader.length) {
-        $(".loader").delay(1200).fadeOut(800, addS);
-    }
-    else {
-        addS();
-    }
-
-
-
+    $(window).on('load', hideLoader);
+    setTimeout(hideLoader, 500);
 });
 
 

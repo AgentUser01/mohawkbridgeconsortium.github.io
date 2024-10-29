@@ -46,15 +46,13 @@
     <div class="container">
         <div class="info">
             <span>
-                <picture>
-                    <source srcset="Images/MBC-Logo.webp" type="image/webp">
-                    <source srcset="Images/MBC-Logo.jpeg" type="image/jpeg">
-                    <img src="Images/MBC-Logo.jpeg" alt="MBC Logo">
-                </picture>
+                <!-- Your logo image -->
+                <img src="Images/MBC-Logo.webp" alt="MBC Logo">
             </span>
         </div>
     </div>
 </div>
+
 <main class="main">
     <nav class="navigation">
         <div class="container">
@@ -147,13 +145,13 @@
 
     <div class="homepage">
         <div id="homepage-hero" class="section">
-            <div>
-                <iframe class="fullscreen-bg__video"
-                        src="https://www.youtube-nocookie.com/embed/GC6fdQbuRB4?controls=0&autoplay=1&mute=1&loop=1&playlist=GC6fdQbuRB4&modestbranding=1&rel=0"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/GC6fdQbuRB4?controls=0&autoplay=1&mute=1&loop=1&playlist=GC6fdQbuRB4&modestbranding=1&rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -203,53 +201,57 @@
 
             </div>
         </section>
+
+        <!-- Statistics -->
+
         <section class="home-statistics">
             <div class="container">
-                <div class="row">
-
-                    <div class="col equal" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-img-top middle">
+                <div class="row justify-content-center">
+                    <!-- First Statistic Card -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-4" data-aos="fade-up">
+                        <div class="card text-center">
+                            <div class="card-img-top">
                                 <span class="nombre-fact">100+</span>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body">
                                 <h4>Employees</h4>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col equal" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-img-top middle">
+                    <!-- Second Statistic Card -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-4" data-aos="fade-up">
+                        <div class="card text-center">
+                            <div class="card-img-top">
                                 <span class="nombre-fact">$300+ Million</span>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body">
                                 <h4>Completed Contractual Work</h4>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col equal" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-img-top middle"><span id="years-in-business" class="nombre-fact">16+</span></div>
-                            <div class="card-body text-center"><h4>Years in Business</h4></div>
+                    <!-- Third Statistic Card -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-4" data-aos="fade-up">
+                        <div class="card text-center">
+                            <div class="card-img-top">
+                                <span id="years-in-business" class="nombre-fact">16+</span>
+                            </div>
+                            <div class="card-body">
+                                <h4>Years in Business</h4>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col equal" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-img-top middle">
+                    <!-- Fourth Statistic Card -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-4" data-aos="fade-up">
+                        <div class="card text-center">
+                            <div class="card-img-top">
                                 <span class="nombre-fact">1</span>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body">
                                 <h4>Unified Team</h4>
                             </div>
                         </div>
                     </div>
-
-                    <div class="break"></div>
                 </div>
-
             </div>
         </section>
 
